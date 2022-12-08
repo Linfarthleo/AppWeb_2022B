@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Validación de formulario</h1>
+        <form method="POST">
+            <fieldset>
+                Nombre:<br>
+                <input type="text" name="nombre" required><br>
+                Apellido:<br>
+                <input type="text" name="apellido" required/><br>
+                Correo:<br>
+                <input type="email" name="email" required/><br>
+                Teléfono (9 dígitos comenzando por 9,8,7 o 6):<br>
+                <input type="text" pattern="^[9|8|7|6]\d{8}$" title="Este no parece un teléfono válido"
+                required /><br>
+                Clave:<br>
+                <input type="password" minlength="8" name="clave" required/><br>
+                Cargo:<br>
+                <select name="Cargo" id="cargo">
+                    <option value="cargo1">Director</option>
+                    <option value="cargo2">Operador</option>
+                    <option value="cargo3">Supervisor</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" name= "enviar" value="Enviar">
+            </fieldset>
+        </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Atributo</title>
+</head>
+<body>
+    <h2>Cambiando el atributo src de una imagen</h2>
+    <img src="https://picsum.photos/id/237/200/300" alt="Perro Rabioso">
+
+    <h2>Haga click para ver el resultado de cada funcion</h2>
+    <ul>
+        <li><button onclick="tieneAtributo()">Tiene Atributo</button></li>
+        <li><button onclick="obtenerAtributo()">Obtener Atributo</button></li>
+        <li><button onclick="configurarAtributo()">Configurar Atributo</button></li>
+        <li><button onclick="removerAtributo()">Remover Atributo</button></li>
+    </ul>
+    <script>
+        function tieneAtributo(){
+            let img = document.querySelector('img');
+            console.log(img.hasAttribute('src'));
+        }
+        function obtenerAtributo(){
+            let img = document.querySelector('img');
+            console.log(img.getAttribute('alt'));
+        }
+        function configurarAtributo(){
+            let img = document.querySelector('img');
+            img.setAttribute('src', 'https://picsum.photos/id/240/200/300');
+        }
+        function removerAtributo(){
+            let img = document.querySelector('img');
+            img.removeAttribute('src');
+        }
+    </script>
+</body>
+</html>

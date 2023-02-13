@@ -1,0 +1,146 @@
+/* Para todo el documento */
+/* *{border:1px solid rgb(255, 0, 0);}  */
+*{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+body{
+    margin: 0 auto;
+}
+/*********** Libreria para generalizar clases**************/
+/* Color background */
+.bg-primario{background: #FFF;}
+.bg-secundario{background: #F00;}
+/* Color txt */
+.t-primario{color: #00F;}
+.t-secundario{color: #0F0;}
+/* propiedades de texto */
+.txt-center{text-align: center;}
+.d-inline-block{display: inline-block;}
+
+
+/* Encabezado */
+header{position: fixed; top: 0px;}
+section{margin-top: 317px;}
+
+#encabezado{ 
+    background-color: rgb(255, 255, 255); 
+    padding: 30px;
+}
+#imgMarvel{width: 20%;}
+#titulo{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#login{
+    float: right;
+}
+
+#contactos{
+    height: 50px;
+    background: #F00;
+    color: #FFF;
+}
+
+
+.logo-rss{
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFF;
+    margin-right: 15px;
+    float: right;
+}
+
+.f-right{
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+/* Menu */
+
+nav{
+    background-color: rgb(255, 0, 0); 
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li{
+    color: #F00;
+    display: inline-block;
+    width: 10%;
+    padding: 5px 10px;
+}
+nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+
+/************ SECTION **********/
+#grilla{
+    text-align: center;
+}
+
+/************ CARTA **********/
+
+.card{
+    border: 1px solid #AAA;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 250px;
+}
+
+.imagen-superheroe{
+    height: 250px;
+    width: 250px;
+}
+
+.imagen-superheroe img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    
+}
+.portada_comic{
+    width: 180px;
+}
+
+.titulo_item{
+    font-family: Tahoma;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.precio-anterior{
+    color: #F00;
+    text-decoration: line-through;
+}
+
+.detalles{
+    margin: auto;
+}
+
+
+
+.precio2{
+    display: inline;
+}
+.valor{
+    color: #F00;
+    text-decoration:line-through;
+}
+.addToCart{
+    color: #FFF;
+    background-color:#F00;
+    border-radius: 3px;
+    margin-top: 15px;
+    width: 150px;
+    font-size: 15px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiando clases con JS</title>
+    <style>
+        .mostrar {
+            display: block;
+        }
+
+        .ocultar {
+            display: none;
+        }
+
+        .nuevaCLase {
+            background-color: blue;
+            border-radius: 15px;
+            color: white;
+        }
+    </style>
+    <script>
+        function carlitos() {
+            console.log(document.getElementById("div_ejemplo").textContent);
+        }
+        window.onload = carlitos;
+
+        function mostrar() {
+            document.getElementById("div_ejemplo").classList.replace("ocultar", "mostrar");
+        }
+        function ocultar() {
+            document.getElementById("div_ejemplo").classList.replace("mostrar", "ocultar");
+        }
+        function agregarClase() {
+            document.getElementById("div_ejemplo").classList.add("nuevaCLase");
+        }
+        function eliminarClase() {
+            if (document.getElementById("div_ejemplo").classList.contains("nuevaCLase")) {
+                document.getElementById("div_ejemplo").classList.remove("nuevaCLase");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cambio de clases</h1>
+    <p>Con JS se puede alterar las clases de un elemento HTML</p>
+    <ul>
+        <li>classList.- Es el conjunto de clases escritas en el elemento HTML</li>
+        <li>classList.add .- Agregar una clase al array de clases</li>
+        <li>classList.replace .- Reemplaza una clase por otra</li>
+        <li>classList.remove .- Elimina la clase enviada como parámetro</li>
+        <li>classList.contains .- Permite conocer si una clase esta o no en el array</li>
+    </ul>
+    <hr>
+    <div> DIV 1</div>
+    <div id="div_ejemplo" class="mostrar"> DIV 2</div>
+
+    <button onclick="mostrar();">Mostrar elemento</button>
+    <button onclick="ocultar();">Ocultar elemento</button>
+    <button onclick="agregarClase();">Agregar clase</button>
+    <button onclick="eliminarClase();">Eliminar clase</button>
+
+
+</body>
+
+</html>

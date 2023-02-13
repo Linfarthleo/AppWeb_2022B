@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Contenido</title>
+</head>
+<body>
+    <h1>Cambio de contenido</h1>
+    <div class="miclase">DIV 1</div>
+    <div class="miclase">DIV 2</div>
+    <button onclick="cambiarContenido()">Cambiar contenido DIVs</button>
+    
+
+    <script>
+        function cambiarContenido(){
+            const arrayElementos = document.querySelectorAll('.miclase');
+            arrayElementos.forEach(element => element.textContent = 'DIV cambiado');
+        }
+            
+    </script>
+</body>
+</html>

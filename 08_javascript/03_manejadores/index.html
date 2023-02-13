@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Forma 1: manejador de linea</h1>
+<p>Hacer click aqui (Forma 1)</p>
+
+<h1>Forma 2: manejador de linea</h1>
+<p>Hacer click aqui (Forma 2)</p>
+
+<h1>Forma 3: manejador de linea</h1>
+<p>Hacer click aqui (Forma 3)</p>
+<body>
+
+    <script>
+        function mostrarMensaje(){
+            alert('onClick: Manejador como propiedad');
+        }
+        //1.- Manejador como propiedad de un elemento HTML
+        document.getElementsByTagName('p')[1]
+        //2.- Manejador AddEventListener
+        document.getElementsByTagName('p')[1].addEventListener('click', mostrarMensaje, false);
+    </script>
+</body>
+</html>

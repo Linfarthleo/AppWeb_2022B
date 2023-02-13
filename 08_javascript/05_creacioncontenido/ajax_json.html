@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON con AJAX</title>
+</head>
+
+<body>
+    <h1>Contenido JSON obtenido</h1>
+    <div id="datosDIV">
+
+    </div>
+    <button onclick="cargarDatos()">Cargar Datos</button>
+
+    <script>
+        function cargarDatos() {
+            var xhr = new XMLHttpRequest();
+        xhr.open("GET", "myJson.json");
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var datos = JSON.parse(this.responseText);
+                console.log(datos);
+                var ul = document.createElement("ul");
+                ul.setAttribute("id", "datosUL");
+                var li = document.createElement("li");
+                ul.appendChild(li);
+                document.getElementById("datosDIV").appendChild(ul);
+                var contenido = "";
+                for (var i = 0; i < datos.length; i++) {
+                    contenido += "<li>" + datos[i].list + "</li>";
+                    document.getElementById("datosUL").appendChild(contenido);
+                }
+                
+            }
+        }
+        xhr.send();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores con JS</title>
+    
+</head>
+<body>
+    <h1>Selectores JS</h1>
+    <p id="mielemento">Párrafo con id="mielemento"</p>
+    <span>Este es un SPAN</span>
+    <p class="clase">Párrafo con clase class="clase"</p>
+    <div class="clase">DIV con clase class="clase"</div>
+
+    <script>
+        // Selectores
+        // Obtener por su ID
+        var elemento = document.getElementById('mielemento');
+        console.log(elemento.textContent);
+        console.log("***********************************");
+        // Obtener por nombre de etiquetas TAG
+        var elementos = document.getElementsByTagName("p");
+        for(var i=0; i<elementos.length; i++){
+            console.log("[" +i+"]"+elementos[i].textContent);
+        }// Obtener por nombre de clase
+        console.log("***********************************");
+        var elementosClase = document.getElementsByClassName('clase');
+        for(var i=0; i<elementosClase.length; i++){
+            console.log("[" +i+"]"+elementosClase[i].textContent);
+        }
+        console.log("***********************************");
+        // Uso de query selector(Siempre retorna el primer elemento de un conjunto)
+        var elementoP = document.querySelector("#principal p");
+        console.log("querySelector(#principal p)"+elementoP.textContent);
+        
+    </script>
+</body>
+</html>

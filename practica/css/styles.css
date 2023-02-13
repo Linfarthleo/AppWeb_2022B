@@ -1,0 +1,193 @@
+/* Importación de fuentes tipograficas*/
+@font-face {
+    font-family: newZelek;
+    src: url(../fonts/new_zelek_[allfont.es].ttf);
+}
+@font-face {
+    font-family: futuraNormal;
+    src: url(../fonts/futura-normal_[allfont.es].ttf);
+}
+/* Para toda la página */
+*{
+    /* border: 1px solid red; */
+    font-family: futuraNormal, Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* My styles' library */
+
+.background-main-color{
+    background: #0071bc;
+}
+.formato-lista{
+    list-style-type: none;
+    text-align: center;
+}
+.formato-lista a{
+    text-decoration:none;
+}
+
+.pad25{
+    padding: 25px;
+}
+
+.posicionamientoMenu{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Encabezado */
+.header{
+    width: 100%;
+    height: 230px;
+    background-image: url(../img/sombra_03.png);
+    background-position: bottom;
+    position:fixed;
+    top: 0;
+}
+
+.menu a{
+    font-size: 20px;
+    color: white;
+}
+
+.menuDos a{
+    font-size: 20px;
+    color: #666666;
+}
+
+
+.bannerDos{
+    display: flex;
+    margin: 4px 0 0 0 ;
+    
+}
+
+.push-right {
+    margin-left: auto;
+  }
+
+
+.bannerDos div:nth-child(1){
+    display: flex;
+    font-size:1.9rem;
+    font-family:newZelek;
+    color: #FFF;
+    padding: 11px 30px;
+    margin: 4px 0 0 0;
+    margin-left: 20px;
+}
+
+.bannerDos div:nth-child(2){
+    display: flex;
+    margin-left: 5px;
+}
+
+.bannerDos div:nth-child(2) div{
+    padding: 11px 11px;
+    border: 1px solid #d4d7d9;
+    margin: 4px 0 0 0 ;
+    border-radius: 2px 0 0 2px;
+}
+
+.bannerDos div:nth-child(2) input{
+    display: flex;
+    width: 500px;
+    height: 64px;
+    line-height: 26px;
+    padding: 11px 50px 11px 15px;
+    border: 1px solid #d4d7d9;
+    background: #edeff1;
+    margin: 4px 0 0 0 ;
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: #575859;
+    
+}
+
+.bannerDos div:nth-child(3){
+    display: flex;
+    order: 4;
+    flex-wrap: wrap;
+}
+
+.iconoBanner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 72px;
+    height: 56px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+/* CUERPO */
+#cuerpo{
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 230px;
+}
+#portada{
+    width: 100%;
+    height: 600px;
+}
+#portada img{
+    width: 100%;
+    height: 100%;
+}
+
+/* PROYECTOS */
+#proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    color: #dddddd;
+    width: 100%;
+    height: 450px;
+    background-color: #000;
+    justify-content: space-between;
+    text-align: center;
+}
+#proyectos h1{
+    font-size: 45px;
+    text-align: center;
+    width: 100%;
+    margin: 30px;
+}
+.card{
+    width: 32%;
+    height: 340px;
+}
+.card img{
+    width: 300px;
+    height: 200px;
+}
+
+.formato-lista span a{
+    color: #dddddd;
+}
+.formato-lista span{
+    margin-top: 10px;
+}
+
+.formato-lista h2{
+    margin: 10px;
+}
+.footer{
+    text-align: center;
+    color: #dddddd;
+    padding: 30px 120px;
+}
+.footer h3{
+    margin: 10px;
+}
+
+.footer p:nth-child(3){
+    margin-top: 15px ;
+    font-size: 20px;
+}
+.footer p:nth-child(3) a{
+    text-decoration: none;
+    color: #dddddd;
+}
